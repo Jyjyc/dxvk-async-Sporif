@@ -14,6 +14,8 @@ An attempt to improve the dxvk async patch at https://github.com/jomihaka/dxvk-p
 ### Instructions
 
 * Patch dxvk with dxvk-async.patch
+  * `git checkout <specific-commit>`
+  * `git apply <path-to-patch>`
 * Set the environment variable `DXVK_ASYNC=1` or use `dxvk.enableAsync = true` in dxvk.conf
 * To compare with stock dxvk, rename or delete your state and shader caches
 * Use `DXVK_HUD=pipelines` to see the pipeline count go up (hopefully) without stutter
